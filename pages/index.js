@@ -13,6 +13,7 @@ import BootNav from '../components/BootNav';
 import FeatureCard from '../components/FeatureCard';
 import HeroSection from '../components/HeroSection';
 import SectionInfo from '../components/SectionInfo';
+import Steps from '../components/Steps';
 import GlobalStyle from '../Styles/GlobalStyle';
 // ....
 
@@ -74,6 +75,8 @@ export default function Home() {
 					})}
 				</div>
 			</div>
+
+			<Steps StepNo='1' StepTitle='Design' />
 		</>
 	);
 }
