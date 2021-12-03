@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useState } from 'react';
 import { Container, Nav, Navbar, NavLink, Offcanvas } from 'react-bootstrap';
 import {
 	AiOutlineAlignLeft,
@@ -14,9 +15,12 @@ import styled from 'styled-components';
 import Logo from './Logo';
 
 const BootNav = () => {
+	const [show, setShow] = useState(false);
+	const handleClose = () => setShow(false);
+	const handleShow = () => setShow(true);
 	const router = useRouter();
 	return (
-		<div>
+		<>
 			<Navbar expand='lg' className='navbar-light bg-grey sticky-top'>
 				<Container>
 					<Navbar.Brand>
@@ -67,29 +71,20 @@ const BootNav = () => {
 							</NavLogo>
 						</a>
 						<SignUpBtn>Sign Up</SignUpBtn>
-
-						<Navbar.Toggle aria-controls='offcanvasNavbar'>
-							<ToggleBtn>
-								<AiOutlineAlignLeft />
-							</ToggleBtn>
-						</Navbar.Toggle>
+						<ToggleBtn onClick={handleShow}>
+							<AiOutlineAlignLeft />
+						</ToggleBtn>
 					</div>
 				</Container>
 
 				{/* .............SIDEBAR............ */}
-				<Navbar.Offcanvas
-					id='offcanvasNavbar'
-					aria-labelledby='offcanvasNavbarLabel'
-					placement='start'
-				>
-					<CanvasHeader>
-						<Offcanvas.Header closeButton>
-							<Navbar.Brand href='/'>
-								<Logo />
-							</Navbar.Brand>
-						</Offcanvas.Header>
-					</CanvasHeader>
-
+				<Offcanvas show={show} onHide={handleClose}>
+					<Offcanvas.Header closeButton>
+						<Navbar.Brand href='/'>
+							<Logo />
+						</Navbar.Brand>
+					</Offcanvas.Header>
+					<CanvasHeader />
 					<Offcanvas.Body>
 						<Nav className='justify-content-end flex-grow-1 pe-3'>
 							<ul className='nav nav-pills flex-column mb-auto'>
@@ -160,10 +155,10 @@ const BootNav = () => {
 							</ul>
 						</Nav>
 					</Offcanvas.Body>
-				</Navbar.Offcanvas>
+				</Offcanvas>
 				{/* .............SIDEBAR............ */}
 			</Navbar>
-		</div>
+		</>
 	);
 };
 
@@ -200,7 +195,21 @@ const SignUpBtn = styled.button`
 		border-color: #5068e2 !important;
 	}
 `;
-const ToggleBtn = styled.div`
+const ToggleBtn = styled.button`
+	padding: 0.25rem 0.75rem;
+	font-size: 1.25rem;
+	line-height: 1;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 0.25rem;
+	border-color: rgba(0, 0, 0, 0.1);
+	@media (min-width: 992px) {
+		display: none;
+	}
+	&:focus {
+		box-shadow: 0 0 0 0rem;
+		border-color: #5068e2;
+	}
 	svg {
 		color: #5068e2;
 		font-weight: 300;
