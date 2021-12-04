@@ -12,6 +12,7 @@ import {
 import BootNav from '../components/BootNav';
 import FeatureCard from '../components/FeatureCard';
 import HeroSection from '../components/HeroSection';
+import ProfileCard from '../components/profileCard';
 import SectionInfo from '../components/SectionInfo';
 import Steps from '../components/Steps';
 import GlobalStyle from '../Styles/GlobalStyle';
@@ -77,6 +78,17 @@ export default function Home() {
 			</div>
 
 			<Steps StepNo='1' StepTitle='Design' />
+			<div className='container'>
+				<div className='row'>
+					<ProfileCard
+						ProfileName={'Shahriar shafin'}
+						Designation={'Founder'}
+						ProfileQuote={
+							'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur molestiae quasi'
+						}
+					/>
+				</div>
+			</div>
 		</>
 	);
 }
