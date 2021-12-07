@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import {
 	FaClock,
 	FaCode,
@@ -15,7 +14,6 @@ import HeroSection from '../components/HeroSection';
 import ProfileCard from '../components/profileCard';
 import SectionInfo from '../components/SectionInfo';
 import Steps from '../components/Steps';
-import GlobalStyle from '../Styles/GlobalStyle';
 // ....
 
 export default function Home() {
@@ -57,7 +55,6 @@ export default function Home() {
 	];
 	return (
 		<>
-			<GlobalStyle />
 			<BootNav />
 			<HeroSection />
 			<SectionInfo

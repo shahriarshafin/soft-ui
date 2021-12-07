@@ -1,5 +1,13 @@
-function MyApp({ Component, pageProps }) {
-	return <Component {...pageProps} />;
-}
+import 'bootstrap/dist/css/bootstrap.min.css';
+import GlobalStyle from '../Styles/GlobalStyle';
 
-export default MyApp;
+const _app = ({ Component, pageProps }) => {
+	return (
+		<>
+			<GlobalStyle />
+			<Component {...pageProps} />
+		</>
+	);
+};
+
+export default _app;
