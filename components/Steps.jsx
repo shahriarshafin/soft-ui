@@ -1,10 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components';
+import GlobalStyle from '../Styles/GlobalStyle';
 
 const Steps = (props) => {
 	const { StepNo, StepTitle } = props;
 	return (
 		<>
+			<GlobalStyle />
 			<section>
 				<div className='container'>
 					<FormSteps>

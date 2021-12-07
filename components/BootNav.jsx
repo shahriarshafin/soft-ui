@@ -13,6 +13,7 @@ import {
 } from 'react-icons/ai';
 import { FaDribbble, FaGithub } from 'react-icons/fa';
 import styled from 'styled-components';
+import GlobalStyle from '../Styles/GlobalStyle';
 import Logo from './Logo';
 
 const BootNav = () => {
@@ -22,6 +23,7 @@ const BootNav = () => {
 	const router = useRouter();
 	return (
 		<>
+			<GlobalStyle />
 			<Navbar expand='lg' className='navbar-light bg-grey sticky-top'>
 				<Container>
 					<Navbar.Brand>

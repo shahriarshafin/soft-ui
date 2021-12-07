@@ -4,11 +4,13 @@ import { Col, Row } from 'react-bootstrap';
 import { FaFacebook, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import styled from 'styled-components';
 import Profile1 from '../assets/images/profile1.png';
+import GlobalStyle from '../Styles/GlobalStyle';
 
 const ProfileCard = (props) => {
 	const { ProfileName, Designation, ProfileQuote } = props;
 	return (
 		<>
+			<GlobalStyle />
 			<Col xm={12} md={6}>
 				<Card className='card'>
 					<Row className='g-0'>

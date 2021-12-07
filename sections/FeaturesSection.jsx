@@ -12,6 +12,7 @@ import {
 } from 'react-icons/fa';
 import FeatureCard from '../components/FeatureCard';
 import SectionInfo from '../components/SectionInfo';
+import GlobalStyle from '../Styles/GlobalStyle';
 
 const FeaturesSection = () => {
 	const icons = [
@@ -52,6 +53,7 @@ const FeaturesSection = () => {
 	];
 	return (
 		<>
+			<GlobalStyle />
 			<Container>
 				<SectionInfo
 					Heading='Know more about Design'
