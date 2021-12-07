@@ -1,4 +1,4 @@
-import BootNav from '../components/bootnav';
+import BootNav from '../components/BootNav';
 import HeroHeading from '../components/HeroHeading';
 
 const services = () => {
