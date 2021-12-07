@@ -4,12 +4,14 @@ import BootNav from '../components/BootNav';
 import Steps from '../components/Steps';
 import FeaturesSection from '../sections/FeaturesSection';
 import HeroSection from '../sections/HeroSection';
+import GlobalStyle from '../Styles/GlobalStyle';
 
 // ....
 
 export default function Home() {
 	return (
 		<>
+			<GlobalStyle />
 			<BootNav />
 			<HeroSection />
 			<FeaturesSection />
