@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import BootNav from '../components/BootNav';
 import HeroHeading from '../components/HeroHeading';
 
