@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import HeroHeading from '../components/HeroHeading';
