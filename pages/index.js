@@ -10,10 +10,11 @@ import {
 } from 'react-icons/fa';
 import BootNav from '../components/BootNav';
 import FeatureCard from '../components/FeatureCard';
-import HeroSection from '../components/HeroSection';
 import ProfileCard from '../components/profileCard';
 import SectionInfo from '../components/SectionInfo';
 import Steps from '../components/Steps';
+import HeroSection from '../sections/HeroSection';
+
 // ....
 
 export default function Home() {
