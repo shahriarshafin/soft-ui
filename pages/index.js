@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import BootNav from '../components/BootNav';
 // import ProfileCard from '../components/ProfileCard';
 import Steps from '../components/Steps';
