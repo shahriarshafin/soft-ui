@@ -7,35 +7,20 @@ const Steps = (props) => {
 	return (
 		<>
 			<GlobalStyle />
-			<section>
-				<div className='container'>
-					<FormSteps>
-						<StepsItem>
-							<ItemContent>
-								<ItemIcon>{StepNo}</ItemIcon>
-								<ItemLine />
-								<ItemText>{StepTitle}</ItemText>
-							</ItemContent>
-						</StepsItem>
-					</FormSteps>
-				</div>
-			</section>
+
+			<StepsItem>
+				<ItemContent>
+					<ItemIcon>{StepNo}</ItemIcon>
+					{StepNo === '1' ? '' : <ItemLine />}
+					<ItemText>{StepTitle}</ItemText>
+				</ItemContent>
+			</StepsItem>
 		</>
 	);
 };
 
 export default Steps;
-const FormSteps = styled.div`
-	display: block;
-	width: 100%;
-	position: relative;
-	margin: 40px 0;
-	&:after {
-		content: '';
-		display: table;
-		clear: both;
-	}
-`;
+
 const StepsItem = styled.div`
 	padding: 0;
 	position: relative;

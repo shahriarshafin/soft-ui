@@ -1,9 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BootNav from '../components/BootNav';
 // import ProfileCard from '../components/ProfileCard';
-import Steps from '../components/Steps';
 import FeaturesSection from '../sections/FeaturesSection';
 import HeroSection from '../sections/HeroSection';
+import StepsSection from '../sections/StepsSection';
 import GlobalStyle from '../Styles/GlobalStyle';
 
 // ....
@@ -15,7 +15,7 @@ export default function Home() {
 			<BootNav />
 			<HeroSection />
 			<FeaturesSection />
-			<Steps StepNo='1' StepTitle='Design' />
+			<StepsSection />
 			<div className='container'>
 				<div className='row'>
 					{/* <ProfileCard
