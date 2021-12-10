@@ -3,53 +3,56 @@ import Image from 'next/image';
 import { Col, Row } from 'react-bootstrap';
 import { FaFacebook, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import styled from 'styled-components';
-import Profile1 from '../assets/images/profile1.png';
 import GlobalStyle from '../Styles/GlobalStyle';
 
 const ProfileCard = (props) => {
-	const { ProfileName, Designation, ProfileQuote } = props;
+	const { ProfileName, Designation, ProfileImage, ProfileQuote } = props;
 	return (
 		<>
 			<GlobalStyle />
-			<Col xm={12} md={6}>
-				<Card className='card'>
-					<Row className='g-0'>
-						<FlexAlignJustifyCenter>
-							<Col md={4}>
-								<TeamImage>
-									<Image src={Profile1} alt='member' />
-								</TeamImage>
-							</Col>
-							<Col md={8}>
-								<div className='card-body'>
-									<CardTitle>{ProfileName}</CardTitle>
 
-									<p className='card-text'>
-										<small className='text-muted fw-bold'>{Designation}</small>
-									</p>
+			<Card className='card'>
+				<Row className='g-0'>
+					<FlexAlignJustifyCenter>
+						<Col md={4}>
+							<TeamImage>
+								<Image
+									src={ProfileImage}
+									alt='member'
+									width={400}
+									height={400}
+								/>
+							</TeamImage>
+						</Col>
+						<Col md={8}>
+							<div className='card-body'>
+								<CardTitle>{ProfileName}</CardTitle>
 
-									<CardText>{ProfileQuote}</CardText>
+								<p className='card-text'>
+									<small className='text-muted fw-bold'>{Designation}</small>
+								</p>
 
-									<IconWrapper>
-										<a href='' target='_blank'>
-											<FaFacebook />
-										</a>
-										<a href='' target='_blank'>
-											<FaTwitter />
-										</a>
-										<a href='' target='_blank'>
-											<FaLinkedinIn />
-										</a>
-										<a href='' target='_blank'>
-											<FaFacebook />
-										</a>
-									</IconWrapper>
-								</div>
-							</Col>
-						</FlexAlignJustifyCenter>
-					</Row>
-				</Card>
-			</Col>
+								<CardText>{ProfileQuote}</CardText>
+
+								<IconWrapper>
+									<a href='' target='_blank'>
+										<FaFacebook />
+									</a>
+									<a href='' target='_blank'>
+										<FaTwitter />
+									</a>
+									<a href='' target='_blank'>
+										<FaLinkedinIn />
+									</a>
+									<a href='' target='_blank'>
+										<FaFacebook />
+									</a>
+								</IconWrapper>
+							</div>
+						</Col>
+					</FlexAlignJustifyCenter>
+				</Row>
+			</Card>
 		</>
 	);
 };
