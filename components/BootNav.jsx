@@ -28,7 +28,7 @@ const BootNav = () => {
 				<Container>
 					<Navbar.Brand>
 						<Link href='/' passHref>
-							<a>
+							<a className='text-decoration-none'>
 								<Logo />
 							</a>
 						</Link>

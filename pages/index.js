@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import BootNav from '../components/BootNav';
 import {
 	FeaturesSection,
+	Footer,
 	HeroSection,
 	StepsSection,
 	TeamSection,
@@ -18,6 +19,7 @@ export default function Home() {
 			<FeaturesSection />
 			<StepsSection />
 			<TeamSection />
+			<Footer />
 		</>
 	);
 }

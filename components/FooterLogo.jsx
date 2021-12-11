@@ -3,7 +3,7 @@ import { FaEnvira } from 'react-icons/fa';
 import styled from 'styled-components';
 import GlobalStyle from '../Styles/GlobalStyle';
 
-const Logo = () => {
+const FooterLogo = () => {
 	return (
 		<>
 			<GlobalStyle />
@@ -17,20 +17,19 @@ const Logo = () => {
 	);
 };
 
-export default Logo;
+export default FooterLogo;
 
 const LogoWrapper = styled.div`
 	display: flex;
 	align-items: center;
 	h4 {
-		margin-left: 1rem;
 		margin-top: 0.5rem;
-		color: #5068e2;
+		margin-left: 1rem;
+		color: white;
 	}
 `;
 const BrandLogo = styled.div`
 	border-radius: 50%;
-	/* padding: 10px; */
 	height: 50px;
 	width: 50px;
 	display: flex;
@@ -38,10 +37,9 @@ const BrandLogo = styled.div`
 	justify-content: center;
 	font-size: 1rem;
 	text-align: center;
-	box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
-	border: 1px solid #5068e2;
+	border: 1px solid #e6e7ee;
 	svg {
 		font-size: 2rem;
-		color: #5068e2;
+		color: #e6e7ee;
 	}
 `;
