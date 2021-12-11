@@ -1,7 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
+import SectionInfo from '../components/SectionInfo';
 import Steps from '../components/Steps';
 import GlobalStyle from '../Styles/GlobalStyle';
+
 const StepsSection = () => {
 	const Step = [
 		{
@@ -31,7 +34,11 @@ const StepsSection = () => {
 			<GlobalStyle />
 
 			<section>
-				<div className='container'>
+				<Container>
+					<SectionInfo
+						Heading='Meet our Team'
+						Description='lorem ipsum dolor sit amet aliquip ex ea commodo consequat.'
+					/>
 					<FormSteps>
 						{Step.map((i) => {
 							return (
@@ -39,7 +46,7 @@ const StepsSection = () => {
 							);
 						})}
 					</FormSteps>
-				</div>
+				</Container>
 			</section>
 		</>
 	);
