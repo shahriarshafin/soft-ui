@@ -8,7 +8,7 @@ const TeamSection = () => {
 			name: 'Shahriar Shafin',
 			designation: 'FOUNDER & CEO',
 			dimage:
-				'https://raw.githubusercontent.com/shahriarshafin/flat-design/main/assets/images/profile1.png?token=AHVY5NRMKKNTL53PFVTVMJTBXSI6U',
+				'https://raw.githubusercontent.com/shahriarshafin/soft-ui/main/assets/images/profile1.png?token=AHVY5NSBFO3HT47EZPJDEN3BXXZUM',
 			quote:
 				'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur molestiae quasi',
 		},
@@ -16,7 +16,7 @@ const TeamSection = () => {
 			name: 'Kendall Andrew',
 			designation: 'GRAPHIC DESIGNER',
 			dimage:
-				'https://raw.githubusercontent.com/shahriarshafin/flat-design/main/assets/images/profile2.png?token=AHVY5NRAG3AVNYSGEXX64LTBXSJAO',
+				'https://raw.githubusercontent.com/shahriarshafin/soft-ui/main/assets/images/profile2.png?token=AHVY5NWFERY5Y5DMLXOUW2TBXXZVE',
 
 			quote:
 				'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur molestiae quasi',
@@ -25,7 +25,7 @@ const TeamSection = () => {
 			name: 'Gina Andrew',
 			designation: 'UI/UX DESIGNER',
 			dimage:
-				'https://raw.githubusercontent.com/shahriarshafin/flat-design/main/assets/images/profile3.png?token=AHVY5NQBBHYCWEUCCYMKPKLBXSJA4',
+				'https://raw.githubusercontent.com/shahriarshafin/soft-ui/main/assets/images/profile3.png?token=AHVY5NVITFGAENSHTZFAVVTBXXZVS',
 			quote:
 				'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur molestiae quasi',
 		},
@@ -33,7 +33,7 @@ const TeamSection = () => {
 			name: 'Alec Thompson',
 			designation: 'FRONT-END DEVELOPER',
 			dimage:
-				'https://raw.githubusercontent.com/shahriarshafin/flat-design/main/assets/images/profile4.png?token=AHVY5NXH3RVOQDPW2OFKKUDBXSJBI',
+				'https://raw.githubusercontent.com/shahriarshafin/soft-ui/main/assets/images/profile4.png?token=AHVY5NVM3UXTE3TTHJHG25DBXXZWA',
 			quote:
 				'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur molestiae quasi',
 		},
