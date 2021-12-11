@@ -41,25 +41,27 @@ const TeamSection = () => {
 
 	return (
 		<>
-			<Container>
-				<SectionInfo
-					Heading='Meet our Team'
-					Description='lorem ipsum dolor sit amet aliquip ex ea commodo consequat.'
-				/>
-				<Row>
-					{profiles.map((i) => {
-						return (
-							<ProfileCard
-								key={i}
-								ProfileName={i.name}
-								Designation={i.designation}
-								ProfileImage={i.dimage}
-								ProfileQuote={i.quote}
-							/>
-						);
-					})}
-				</Row>
-			</Container>
+			<section>
+				<Container>
+					<SectionInfo
+						Heading='Meet our Team'
+						Description='lorem ipsum dolor sit amet aliquip ex ea commodo consequat.'
+					/>
+					<Row>
+						{profiles.map((item) => {
+							return (
+								<ProfileCard
+									key={item}
+									ProfileName={item.name}
+									Designation={item.designation}
+									ProfileImage={item.dimage}
+									ProfileQuote={item.quote}
+								/>
+							);
+						})}
+					</Row>
+				</Container>
+			</section>
 		</>
 	);
 };

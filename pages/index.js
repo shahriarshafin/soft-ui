@@ -1,9 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BootNav from '../components/BootNav';
-import FeaturesSection from '../sections/FeaturesSection';
-import HeroSection from '../sections/HeroSection';
-import StepsSection from '../sections/StepsSection';
-import TeamSection from '../sections/TeamSection';
+import {
+	FeaturesSection,
+	HeroSection,
+	StepsSection,
+	TeamSection,
+} from '../sections';
 import GlobalStyle from '../Styles/GlobalStyle';
 
 export default function Home() {

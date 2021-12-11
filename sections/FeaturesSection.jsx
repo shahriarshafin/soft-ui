@@ -54,22 +54,24 @@ const FeaturesSection = () => {
 	return (
 		<>
 			<GlobalStyle />
-			<Container>
-				<SectionInfo
-					Heading='Know more about Design'
-					Description='lorem ipsum dolor sit amet aliquip ex ea commodo consequat.'
-				/>
-				<Row>
-					{FeatureData.map((item, idx) => {
-						const Icon = icons[idx];
-						return (
-							<>
-								<FeatureCard Title={item.title} icon={<Icon />} />
-							</>
-						);
-					})}
-				</Row>
-			</Container>
+			<section>
+				<Container>
+					<SectionInfo
+						Heading='Know more about Design'
+						Description='lorem ipsum dolor sit amet aliquip ex ea commodo consequat.'
+					/>
+					<Row>
+						{FeatureData.map((item, idx) => {
+							const Icon = icons[idx];
+							return (
+								<>
+									<FeatureCard Title={item.title} icon={<Icon />} />
+								</>
+							);
+						})}
+					</Row>
+				</Container>
+			</section>
 		</>
 	);
 };
