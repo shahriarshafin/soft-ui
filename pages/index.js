@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BootNav from '../components/BootNav';
+import Head from '../components/Head';
 import {
 	FeaturesSection,
 	Footer,
@@ -9,9 +10,10 @@ import {
 } from '../sections';
 import GlobalStyle from '../Styles/GlobalStyle';
 
-export default function Home() {
+const index = () => {
 	return (
 		<>
+			<Head title={'Home | Soft UI'} />
 			<GlobalStyle />
 
 			<BootNav />
@@ -22,4 +24,6 @@ export default function Home() {
 			<Footer />
 		</>
 	);
-}
+};
+
+export default index;
