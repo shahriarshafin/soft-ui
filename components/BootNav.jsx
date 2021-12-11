@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
@@ -13,7 +12,6 @@ import {
 } from 'react-icons/ai';
 import { FaDribbble, FaGithub } from 'react-icons/fa';
 import styled from 'styled-components';
-import GlobalStyle from '../Styles/GlobalStyle';
 import Logo from './Logo';
 
 const BootNav = () => {
@@ -23,7 +21,6 @@ const BootNav = () => {
 	const router = useRouter();
 	return (
 		<>
-			<GlobalStyle />
 			<Navbar expand='lg' className='navbar-light bg-grey sticky-top'>
 				<Container>
 					<Navbar.Brand>

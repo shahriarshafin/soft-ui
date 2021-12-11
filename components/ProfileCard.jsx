@@ -1,16 +1,12 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from 'next/image';
 import { Col, Row } from 'react-bootstrap';
 import { FaFacebook, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import styled from 'styled-components';
-import GlobalStyle from '../Styles/GlobalStyle';
 
 const ProfileCard = (props) => {
 	const { ProfileName, Designation, ProfileImage, ProfileQuote } = props;
 	return (
 		<>
-			<GlobalStyle />
-
 			<Card className='card'>
 				<Row className='g-0'>
 					<FlexAlignJustifyCenter>

@@ -1,12 +1,9 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaEnvira } from 'react-icons/fa';
 import styled from 'styled-components';
-import GlobalStyle from '../Styles/GlobalStyle';
 
 const FooterLogo = () => {
 	return (
 		<>
-			<GlobalStyle />
 			<LogoWrapper>
 				<BrandLogo>
 					<FaEnvira />

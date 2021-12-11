@@ -1,11 +1,8 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components';
-import GlobalStyle from '../Styles/GlobalStyle';
 const FeatureCard = (props) => {
 	const { icon, Title } = props;
 	return (
 		<>
-			<GlobalStyle />
 			<div className='col-12 col-lg-3 col-md-6'>
 				<CardWrapper>
 					<WrapChild>

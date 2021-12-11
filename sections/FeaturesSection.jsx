@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row } from 'react-bootstrap';
 import {
 	FaClock,
@@ -12,7 +11,6 @@ import {
 } from 'react-icons/fa';
 import FeatureCard from '../components/FeatureCard';
 import SectionInfo from '../components/SectionInfo';
-import GlobalStyle from '../Styles/GlobalStyle';
 
 const FeaturesSection = () => {
 	const icons = [
@@ -53,7 +51,6 @@ const FeaturesSection = () => {
 	];
 	return (
 		<>
-			<GlobalStyle />
 			<section>
 				<Container>
 					<SectionInfo

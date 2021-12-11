@@ -1,11 +1,8 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components';
-import GlobalStyle from '../Styles/GlobalStyle';
 
 const SectionInfo = (props) => {
 	return (
 		<>
-			<GlobalStyle />
 			<Heading>{props.Heading}</Heading>
 			<Description> {props.Description}</Description>
 		</>

@@ -1,12 +1,9 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components';
-import GlobalStyle from '../Styles/GlobalStyle';
 
 const HeroHeading = (props) => {
 	const { Normal, Highlight } = props;
 	return (
 		<>
-			<GlobalStyle />
 			<Heading>
 				{Normal}
 				<span>{Highlight}</span>
