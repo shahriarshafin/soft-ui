@@ -8,7 +8,7 @@ const Logo = () => {
 				<BrandLogo>
 					<FaEnvira />
 				</BrandLogo>
-				<h4>Soft UI</h4>
+				<h4 className='d-none d-sm-block'>Soft UI</h4>
 			</LogoWrapper>
 		</>
 	);

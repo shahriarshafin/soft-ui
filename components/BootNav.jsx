@@ -19,6 +19,36 @@ const BootNav = () => {
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
 	const router = useRouter();
+
+	const NavItems = [
+		{
+			name: 'Home',
+			link: '/',
+		},
+		{
+			name: 'About',
+			link: '/about',
+		},
+		{
+			name: 'Contact',
+			link: '/contact',
+		},
+		{
+			name: 'Services',
+			link: '/services',
+		},
+		{
+			name: 'Products',
+			link: '/products',
+		},
+	];
+	const icons = [
+		AiOutlineHome,
+		AiOutlineInfoCircle,
+		AiOutlineMessage,
+		AiOutlineBarChart,
+		AiOutlineDatabase,
+	];
 	return (
 		<>
 			<Navbar expand='lg' className='navbar-light bg-grey sticky-top'>
@@ -32,22 +62,16 @@ const BootNav = () => {
 					</Navbar.Brand>
 
 					<div className='collapse navbar-collapse'>
-						<Nav className='navbar-nav ms-auto me-5 mb-lg-0"'>
-							<Link href='/' className='nav-link' passHref>
-								<NavLink className='nav-link'>Home</NavLink>
-							</Link>
-							<Link href='/about' className='nav-link' passHref>
-								<NavLink className='nav-link'>About</NavLink>
-							</Link>
-							<Link href='/contact' className='nav-link' passHref>
-								<NavLink className='nav-link'>Contact</NavLink>
-							</Link>
-							<Link href='/services' className='nav-link' passHref>
-								<NavLink className='nav-link'>Services</NavLink>
-							</Link>
-							<Link href='/products' className='nav-link' passHref>
-								<NavLink className='nav-link'>Products</NavLink>
-							</Link>
+						<Nav className='navbar-nav ms-auto me-5 mb-lg-0'>
+							{NavItems.map((item, index) => (
+								<>
+									<Link href={item.link} className='nav-link' passHref>
+										<NavLink key={index} active={router.pathname === item.link}>
+											{item.name}
+										</NavLink>
+									</Link>
+								</>
+							))}
 						</Nav>
 					</div>
 
@@ -88,70 +112,28 @@ const BootNav = () => {
 					<Offcanvas.Body>
 						<Nav className='justify-content-end flex-grow-1 pe-3'>
 							<ul className='nav nav-pills flex-column mb-auto'>
-								<SideNavItem>
-									<Link href='/'>
-										<a
-											className={
-												router.pathname == '/' ? 'active-nav-link' : ''
-											}
-										>
-											<AiOutlineHome />
-											Home
-										</a>
-									</Link>
-								</SideNavItem>
-
-								<SideNavItem>
-									<Link href='/about'>
-										<a
-											className={
-												router.pathname == '/about' ? 'active-nav-link' : ''
-											}
-										>
-											<AiOutlineInfoCircle />
-											About
-										</a>
-									</Link>
-								</SideNavItem>
-
-								<SideNavItem>
-									<Link href='/contact'>
-										<a
-											className={
-												router.pathname == '/contact' ? 'active-nav-link' : ''
-											}
-										>
-											<AiOutlineMessage />
-											Contact
-										</a>
-									</Link>
-								</SideNavItem>
-
-								<SideNavItem>
-									<Link href='/services'>
-										<a
-											className={
-												router.pathname == '/services' ? 'active-nav-link' : ''
-											}
-										>
-											<AiOutlineBarChart />
-											Services
-										</a>
-									</Link>
-								</SideNavItem>
-
-								<SideNavItem>
-									<Link href='/products'>
-										<a
-											className={
-												router.pathname == '/products' ? 'active-nav-link' : ''
-											}
-										>
-											<AiOutlineDatabase />
-											Products
-										</a>
-									</Link>
-								</SideNavItem>
+								{NavItems.map((item, index) => {
+									const Icon = icons[index];
+									return (
+										<>
+											<SideNavItem>
+												<Link href={item.link}>
+													<a
+														className={
+															router.pathname === item.link
+																? 'active-nav-link'
+																: ''
+														}
+														key={index}
+													>
+														{<Icon />}
+														{item.name}
+													</a>
+												</Link>
+											</SideNavItem>
+										</>
+									);
+								})}
 							</ul>
 						</Nav>
 					</Offcanvas.Body>
@@ -176,6 +158,7 @@ const NavLogo = styled.div`
 		}
 	}
 `;
+
 const SignUpBtn = styled.button`
 	transition: all 0.2s ease;
 	letter-spacing: 0.025em;
@@ -195,6 +178,7 @@ const SignUpBtn = styled.button`
 		border-color: #5068e2 !important;
 	}
 `;
+
 const ToggleBtn = styled.button`
 	padding: 0.25rem 0.75rem;
 	font-size: 1.25rem;
@@ -216,9 +200,11 @@ const ToggleBtn = styled.button`
 		font-size: 28px;
 	}
 `;
+
 const CanvasHeader = styled.div`
 	border-bottom: 2px solid #5068e2;
 `;
+
 const SideNavItem = styled.li`
 	margin-top: 0.25rem;
 	a {
