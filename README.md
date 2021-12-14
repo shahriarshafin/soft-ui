@@ -1,16 +1,18 @@
 <p align="center">
+   <a href="https://softui.vercel.app/" target="blank">
     <img src="./assets/images/logo.svg" alt="Logo" width="300">
+   </a>
 </p>
 
 <p align="center">
-<a href="" target="blank">
+<a href="https://softui.vercel.app/" target="blank">
 <img alt="GitHub deployments" src="https://img.shields.io/github/deployments/shahriarshafin/soft-ui/production?label=vercel&logo=vercel&logoColor=vercel&style=flat-square">
 </a>
-<a href="https://github.com/shahriarshafin/soft-ui/blob/master/LICENSE" target="blank">
+<a href="https://github.com/shahriarshafin/soft-ui/blob/main/LICENSE" target="blank">
 <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="licence" />
 </a>
-<a href="https://github.com/shahriarshafin/soft-ui/commits/master" target="blank">
-<img alt="GitHub commit merge status" src="https://img.shields.io/github/commit-status/shahriarshafin/soft-ui/master/efc47576d96123509711d275c6fe613a3bfe4b94?style=flat-square"/>
+<a href="https://github.com/shahriarshafin/soft-ui/commits/main" target="blank">
+<img alt="GitHub commit merge status" src="https://img.shields.io/github/commit-status/shahriarshafin/soft-ui/main/8c77b17ee9e18b1e2094e48f6cae0a112b4212d5?style=flat-square"/>
 </a>
 <a href="https://twitter.com/intent/tweet?text=👋%20Check%20this%20amazing%20app!%20https://softui.vercel.app/,%20created%20by%20@connectshafin">
 <img src="https://img.shields.io/twitter/url?label=Share%20on%20Twitter&style=social&url=https%3A%2F%2Fgithub.com%2Fshahriar%2Fshafin">
@@ -22,7 +24,9 @@
 # Introducing `Soft UI`
 
 <p align="center">
-    <img src="./assets/images/soft-ui.gif" alt="Logo" width="" height="">
+<a href="https://softui.vercel.app/" target="blank">
+<img src="./assets/images/soft-ui.gif" alt="Logo" width="" height="">
+</a>
 </p>
 
 `Soft UI`. Based on Neumorphism design concepts, bootstrapped with Next.js
