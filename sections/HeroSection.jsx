@@ -1,14 +1,13 @@
 import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import HeroHeading from '../components/HeroHeading';
-import GlobalStyle from '../Styles/GlobalStyle';
 
 const HeroSection = () => {
 	return (
 		<>
 			<section>
 				<Container>
-					<HeroHeading Normal={'hey, I am '} Highlight={'SHAHRIAR SHFIN'} />
+					<HeroHeading Normal={'hey, I am '} Highlight={'SHAHRIAR SHAFIN'} />
 					<HeroDescription>
 						Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 						Molestiae, odit. ipsum dolor sit amet consectetur adipisicing elit.

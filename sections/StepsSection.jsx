@@ -2,7 +2,6 @@ import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import SectionInfo from '../components/SectionInfo';
 import Steps from '../components/Steps';
-import GlobalStyle from '../Styles/GlobalStyle';
 
 const StepsSection = () => {
 	const Step = [
@@ -33,7 +32,7 @@ const StepsSection = () => {
 			<section>
 				<Container>
 					<SectionInfo
-						Heading='Meet our Team'
+						Heading='Steps we Follow'
 						Description='lorem ipsum dolor sit amet aliquip ex ea commodo consequat.'
 					/>
 					<FormSteps>
